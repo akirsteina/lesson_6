@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <!-- label for = focusing, clicking on label -->
+            <!-- focusing in form - click, label, tab -->
+            <label for="name-input-field">Name: </label>
+            <input type="text" id="name-input-field" value="Some Name">
+        </div>
+        <!-- Value - when you have a profile that you want to edit (e.g. in Facebook profile) -->
+        <!-- Placeholder - to specify what should go in form, often doesnt work well, especially for large forms -->
+        <!-- attributes: disabled, read only -->
+        <div>
+            <label for="password-input-field">Password: </label>
+            <input type="password" id="password-input-field" placeholder="Password">
+        </div>
+
+        <div>
+            <input type="checkbox" id="agree-checkbock" checked disabled>
+            <label for="agree-checkbock">Agree to the terms and conditions</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="newsletter-checkbock">
+            <label for="newsletter-checkbock">Get the newsletter</label>
+        </div>
+
+        <div>
+            <h5>Gender</h5>
+            <div>
+                <input type="radio" id="gender-female" name="gender">
+                <label for="gender-female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="gender-male" name="gender">
+                <label for="gender-male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="gender-idk" name="gender" checked>
+                <label for="gender-idk">IDK</label>
+            </div>
+            <div>
+                <input type="radio" id="gender-not-telling" name="gender">
+                <label for="gender-not-telling">Not gonna tell ya'</label>
+            </div>
+        </div>
+
+    </form>
+
+
+    <!-- kebab-case -->
+    <!-- snake_case -->
+    <!-- camelCase -->
+    <!-- PascalCase -->
+</body>
+
+</html>
