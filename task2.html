@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="index.html"><--Back</a>
+    </div>
+    <h1>Add to-do item:</h1>
+    <form action="" method="GET">
+
+        <div>
+            <label for="task-input-field">Task name: </label>
+            <br>
+            <input type="text" id="task-input-field" placeholder="Please enter task name" name="task">
+        </div>
+
+        <div>
+            <label for="task-description">Task description:</label>
+            <br>
+            <textarea id="task-description" cols="50" rows="20" name="description"></textarea>
+        </div>
+
+        <div>
+            <input type="hidden" name="checkbock" value="0">
+            <input type="checkbox" id="agree-checkbock" checked name="checkbock" value="1">
+            <label for="agree-checkbock">Is completed?</label>
+        </div>
+        
+        <div>
+            <label for="category-select">Category:</label>
+            <select id="category-select" name="category">
+                <option value="">Choose category:</option>
+                <optgroup label="Shopping">
+                    <option value="1">Groceries</option>
+                    <option value="2">Cleaning</option>
+                    <option value="3">Clothing</option>
+                </optgroup>
+                <optgroup label="Others">
+                    <option value="4">Climb a tree</option>
+                    <option value="5">Pet my dog</option>
+
+                </optgroup>
+            </select>
+
+        </div>
+
+        <div>
+            <button type="submit">Add todo</button>
+        </div>
+    </form> 
+</body>
+</html>
