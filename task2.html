@@ -11,33 +11,37 @@
 <body>
     <div>
         <a href="index.html">
-            <--Back< /a>
+            <--Back
+        </a>
     </div>
-    <div><h1>Add to-do item:</h1></div>
-    <form action="" method="GET">
+    <div>
+        <h1>Add to-do item:</h1>
+    </div>
 
-        <div>
-            <label for="task-input-field">Task name: </label>
-            <br>
-            <input type="text" id="task-input-field" placeholder="Please enter task name" name="task">
-        </div>
+    <div>
+        <form action="" method="POST">
 
-        <div>
-            <label for="task-description">Task description:</label>
-            <br>
-            <textarea id="task-description" cols="50" rows="20" name="description"></textarea>
-        </div>
+            <div>
+                <div><label for="task-input-field">Task name: </label></div>
+                <div> <input type="text" id="task-input-field" placeholder="Please enter task name" name="task"></div>
 
-        <div>
-            <input type="hidden" name="checkbock" value="0">
-            <input type="checkbox" id="agree-checkbock" checked name="checkbock" value="1">
-            <label for="agree-checkbock">Is completed?</label>
-        </div>
+            </div>
 
-        <div>
-            <label for="category-select">Category:</label>
-            <br>
-            <select id="category-select" name="category">
+            <div>
+                <div><label for="task-description">Task description:</label></div>
+                <div> <textarea id="task-description" cols="50" rows="20" name="description"></textarea></div>
+
+            </div>
+
+            <div>
+                <input type="hidden" name="checkbock" value="0">
+                <input type="checkbox" id="agree-checkbock" checked name="checkbock" value="1">
+                <label for="agree-checkbock">Is completed?</label>
+            </div>
+
+            <div>
+                <div><label for="category-select">Category:</label></div>
+               <div><select id="category-select" name="category">
                 <option value="">Choose category:</option>
                 <optgroup label="Shopping">
                     <option value="1">Groceries</option>
@@ -49,14 +53,16 @@
                     <option value="5">Pet my dog</option>
 
                 </optgroup>
-            </select>
+            </select></div>
+                
 
-        </div>
+            </div>
 
-        <div>
-            <button type="submit">Add todo</button>
-        </div>
-    </form>
+            <div>
+                <button type="submit">Add todo</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
